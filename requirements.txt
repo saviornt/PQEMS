@@ -1,12 +1,14 @@
 # Core dependencies
 setuptools                     
 wheel
+python-dotenv                   # Reads key-value pairs from a .env file and can set them as environment variables.
 qiskit>=1.2.1                   # Quantum SDK for quantum compression and processing
 pycryptodome>=3.20.0            # For Kyber post-quantum encryption
 liboqs>=0.9.1                   # Post-quantum cryptography library for Kyber
 cryptography>=43.0.1            # For general encryption, TPM2, and DPAPI support
 pymongo>=4.8.0                  # MongoDB driver for Python, used in database handling
 psycopg[binary,pool]>=3.2.2     # PostgreSQL adapter for Python
+mysql-connector-python>=9.0.0   # MySQL connector for Python
 
 # Multiprocessing and GPU acceleration
 numpy                           # For efficient numerical processing (required by Qiskit)

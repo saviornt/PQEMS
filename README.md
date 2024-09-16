@@ -1,3 +1,5 @@
+## Note: DO NOT USE THIS PROJECT FOR PRODUCTION OR TESTING PURPOSES, IT ISN'T EVEN IN ALPHA TESTING!
+
 ## Windows Installation (via WSL2)
 
 ### Prerequisites
