@@ -1,0 +1,28 @@
+# Core dependencies
+setuptools                     
+wheel
+qiskit>=1.2.1                   # Quantum SDK for quantum compression and processing
+pycryptodome>=3.20.0            # For Kyber post-quantum encryption
+liboqs>=0.9.1                   # Post-quantum cryptography library for Kyber
+cryptography>=43.0.1            # For general encryption, TPM2, and DPAPI support
+pymongo>=4.8.0                  # MongoDB driver for Python, used in database handling
+psycopg[binary,pool]>=3.2.2     # PostgreSQL adapter for Python
+
+# Multiprocessing and GPU acceleration
+numpy                           # For efficient numerical processing (required by Qiskit)
+numba                           # For JIT compilation (will help with GPU acceleration)
+pycuda==2024.1.2                # Python wrapper for NVIDIA CUDA for GPU-based processing
+
+# Error correction and hashing
+reedsolo==1.7.0                 # Classical error correction library (Reed-Solomon)
+
+# Logging and utilities
+loguru==0.7.2                   # Simplified logging library
+
+# Optional for Windows
+pywin32==306                    # Windows API, needed for DPAPI
+
+# Optional for Linux (TPM2)
+#tpm2-pytss==2.3.0               # TPM2 support for Linux
+
+# Optional for MacOS (just as placeholder if Mac-specific packages are needed)

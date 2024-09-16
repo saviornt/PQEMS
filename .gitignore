@@ -1,0 +1,16 @@
+# Python virtual environment
+.venv/
+
+# Build artifacts
+build/
+*.egg-info
+
+# Directories for external libraries
+liboqs/
+liboqs-python/
+
+# IDE/workspace files
+*.code-workspace
+
+# Binary files
+*.bin
