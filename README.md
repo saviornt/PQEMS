@@ -18,7 +18,7 @@ to "lock" the encryption so that one needs the keys in order to decrypt the data
 
 ### Prerequisites
 
-This project requires **WSL2** (Windows Subsystem for Linux 2.0) to run Linux-based packages, tpm2-tss and the NVIDIA CUDA Tookkit.
+This project requires the NVIDIA CUDA Tookkit and **WSL2** (Windows Subsystem for Linux 2.0) to run Linux-based packages and to build tpm2-tss.
 
 ### Steps to Install CUDA Toolkit
 
