@@ -32,9 +32,9 @@ This project requires **WSL2** (Windows Subsystem for Linux 2.0) to run Linux-ba
     ```bash
     choco install pkgconfiglite
 
-1. **Enable the Universe Repository**
+1. **Enable the Universe Repository in WSL**
 
-    Open your WSL terminal and run the following command to enable the Universe repository, which is necessary for some of the dependencies:
+    Open your WSL Ubuntu terminal and run the following command to enable the Universe repository, which is necessary for some of the dependencies:
 
     ```bash
     sudo add-apt-repository universe
