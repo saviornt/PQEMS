@@ -4,6 +4,8 @@ from qiskit_aer import AerSimulator
 from qiskit_ibm_provider import IBMProvider
 from loguru import logger
 
+# TODO: Reconfigure the QuantumConnection to use NVidia CUDA-Q
+
 # Create logs directory if it does not exist
 logs_dir = 'logs'
 os.makedirs(logs_dir, exist_ok=True)

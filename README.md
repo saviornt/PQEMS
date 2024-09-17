@@ -1,5 +1,19 @@
-## Note: DO NOT USE THIS PROJECT FOR PRODUCTION OR TESTING PURPOSES, IT ISN'T EVEN IN ALPHA TESTING!
-
+# Post-Quantum Encryption Management System
+---
+## Project Goals
+  
+The goals of this project are simple in theory, yet difficult in practice: To provide an all-inclusive management system for data  
+security based around the NIST Post-Quantum Cryptography Standards, whether it be for entries in a database or for files themselves. 
+  
+To do this, we use old ideas, but with a new twist. For example, the old idea is that one should use a key-pair (public key, private key)  
+to "lock" the encryption so that one needs the keys in order to decrypt the data.  
+  
+- Key-pair generation: Rather than using the classical RSA or Diffie-Hellman for key generation, we will instead use Kyber.
+- Key storage: Storage of the keys should use TPM2.0 modules or failing that,  either Windows DPAPI, Linux LibSecret, or Apple Keychain.
+- Encryption/Decryption: Encryption of the data will use RLWE, Ring Learning with Errors.
+  
+---
+  
 ## Windows Installation (via WSL2)
 
 ### Prerequisites

@@ -24,6 +24,8 @@ mysql-connector-python>=9.0.0   # MySQL connector for Python
 numpy                           # For efficient numerical processing (required by Qiskit)
 numba                           # For JIT compilation (will help with GPU acceleration)
 pycuda==2024.1.2                # Python wrapper for NVIDIA CUDA for GPU-based processing
+torch>=2.4.1                    # Provides GPU acceleration for non-CUDA machines.
+
 
 # Error correction and hashing
 reedsolo==1.7.0                 # Classical error correction library (Reed-Solomon)

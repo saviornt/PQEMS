@@ -33,12 +33,13 @@ setup(
         "numpy==2.1.1",                     # For efficient numerical processing (required by Qiskit)
         "numba==0.60.0",                    # For JIT compilation (will help with GPU acceleration)
         "pycuda==2024.1.2",                 # Python wrapper for NVIDIA CUDA for GPU-based processing
+        "torch>=2.4.1",                     # Provides GPU acceleration for non-CUDA machines.
         "reedsolo==1.7.0",                  # Classical error correction library (Reed-Solomon)
         "loguru==0.7.2",                    # Simplified logging library
         "pywin32==306",                     # Windows API, needed for DPAPI (no TPM)
         "tpm2-pytss>=2.3.0",                # TPM2 support for machines with an installed TPM
         "keyring>=25.3.0",                  # Used to support secure key storage on macOS Darwin (no TPM)
-        "SecretStorage>=3.3.3",            # Linux API to securely store passwords on Linux (no TPM)
+        "SecretStorage>=3.3.3",             # Linux API to securely store passwords on Linux (no TPM)
     ],
     entry_points={
         'console_scripts': [
