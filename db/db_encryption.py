@@ -1,6 +1,6 @@
 import os
 import shutil
-from kyber_encryption import KyberEncryption
+from encryption import KyberEncryption
 from loguru import logger
 from dotenv import load_dotenv
 

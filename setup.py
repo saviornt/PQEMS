@@ -22,6 +22,8 @@ setup(
         "python-dotenv",                    # Reads key-value pairs from a .env file and can set them as environment variables.
         "pkg-config",
         "qiskit>=1.2.1",                    # Quantum compression (Qiskit)
+        "qiskit-aer>=0.15.1",               # IBM Aer Simulator
+        "qiskit-ibm-provider>=0.11.0"       # IBM Quantum computer provider
         "pycryptodome>=3.20.0",             # Kyber encryption
         "liboqs>=0.9.1",                    # Post-quantum cryptography (Kyber)
         "cryptography>=43.0.1",             # General cryptography
@@ -33,16 +35,11 @@ setup(
         "pycuda==2024.1.2",                 # Python wrapper for NVIDIA CUDA for GPU-based processing
         "reedsolo==1.7.0",                  # Classical error correction library (Reed-Solomon)
         "loguru==0.7.2",                    # Simplified logging library
+        "pywin32==306",                     # Windows API, needed for DPAPI (no TPM)
+        "tpm2-pytss>=2.3.0",                # TPM2 support for machines with an installed TPM
+        "keyring>=25.3.0",                  # Used to support secure key storage on macOS Darwin (no TPM)
+        "SecretStorage>=3.3.3",            # Linux API to securely store passwords on Linux (no TPM)
     ],
-    extras_require={
-        "windows": [
-            "pywin32==306",                 # Windows specific package for DPAPI
-        ],
-        "macos": [],
-        "linux": [
-            "python-tpm2-pytss==2.3.0",     # TPM2 support for Linux
-        ],
-    },
     entry_points={
         'console_scripts': [
             'quantum-encryption=main:main',

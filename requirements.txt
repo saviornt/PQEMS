@@ -3,9 +3,19 @@ setuptools
 wheel
 python-dotenv                   # Reads key-value pairs from a .env file and can set them as environment variables.
 qiskit>=1.2.1                   # Quantum SDK for quantum compression and processing
+qiskit-aer>=0.15.1              # IBM Aer Simulator
+qiskit-ibm-provider>=0.11.0     # IBM Quantum computer provider
+
+# Encryption and key management libraries
 pycryptodome>=3.20.0            # For Kyber post-quantum encryption
 liboqs>=0.9.1                   # Post-quantum cryptography library for Kyber
 cryptography>=43.0.1            # For general encryption, TPM2, and DPAPI support
+tpm2-pytss==2.3.0               # TPM2 support for machines with TPM module
+keyring>=25.3.0                 # Used to support secure key storage on macOS Darwin (no TPM)
+pywin32==306                    # Windows API, needed for DPAPI (no TPM)
+SecretStorage>=3.3.3            # Linux API to securely store passwords on Linux (no TPM)
+
+# Database Connections
 pymongo>=4.8.0                  # MongoDB driver for Python, used in database handling
 psycopg[binary,pool]>=3.2.2     # PostgreSQL adapter for Python
 mysql-connector-python>=9.0.0   # MySQL connector for Python
@@ -20,11 +30,3 @@ reedsolo==1.7.0                 # Classical error correction library (Reed-Solom
 
 # Logging and utilities
 loguru==0.7.2                   # Simplified logging library
-
-# Optional for Windows
-pywin32==306                    # Windows API, needed for DPAPI
-
-# Optional for Linux (TPM2)
-#tpm2-pytss==2.3.0               # TPM2 support for Linux
-
-# Optional for MacOS (just as placeholder if Mac-specific packages are needed)
